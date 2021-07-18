@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7240433B"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="218dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/librebaskervillebold"
+                android:gravity="center"
+                android:text="REGISTRO DE USUARIO"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                app:srcCompat="@drawable/paycalendar" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+
+            <EditText
+                android:id="@+id/txtApellidoRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:ems="10"
+                android:fontFamily="@font/librebaskervillebold"
+                android:hint="  Ingrese sus Apellidos"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFBFB"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <EditText
+                android:id="@+id/txtNombreRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:ems="10"
+                android:fontFamily="@font/librebaskervillebold"
+                android:hint="  Ingrese sus Nombres"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <EditText
+                android:id="@+id/txtEmailRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:ems="10"
+                android:fontFamily="@font/librebaskervillebold"
+                android:hint="  Ingrese su Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="7dp" />
+
+            <EditText
+                android:id="@+id/txtPasswordRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:ems="10"
+                android:fontFamily="@font/librebaskervillebold"
+                android:hint="  Ingrese su Contraseña"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <EditText
+                android:id="@+id/txtPasswordConfirmada"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:ems="10"
+                android:fontFamily="@font/librebaskervillebold"
+                android:hint="Confirme su Contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <EditText
+                android:id="@+id/txtCedulaRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:ems="10"
+                android:fontFamily="@font/librebaskervillebold"
+                android:hint="Cedula de Identidad"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/mBtn5"
+                android:layout_width="252dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/borderbutton"
+                android:fontFamily="@font/librebaskervillebold"
+                android:onClick="registrarUsuario"
+                android:text="Registrar Usuario"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="@color/cardview_dark_background"
+                app:backgroundTintMode="add" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="31dp" />
+
+            <Button
+                android:id="@+id/mBtn4"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/borderbutton"
+                android:fontFamily="@font/librebaskervillebold"
+                android:onClick="cerrarPantallaRegistro"
+                android:text="Cerrar"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="@color/cardview_dark_background"
+                app:backgroundTintMode="add" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
