@@ -14,9 +14,13 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
     }
 
-    public void abrirPantallaRegistro(View vista){ //metodo para abrir ventana de registro
-        Intent pantallaRegistro= new Intent(getApplicationContext(),RegistroActivity.class); //creando in intnt para invocar a registro activicty
-        startActivity(pantallaRegistro); //iniciamos la pantalla de Registro
 
+        public void abrirRegistroEmpleado(View vista){ //metodo para abrir ventana de registro
+        Intent pantallaRegistroE= new Intent(getApplicationContext(),RegistroActivity.class); // invocar registro Empleados
+        startActivity(pantallaRegistroE); //iniciamos la pantalla de Registro
+    }
+
+    public void cerrarPantallaMenu(View vista) {
+        finish();
     }
 }

@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         bdd=new BaseDatos(getApplicationContext());
     }
 
-    public void abrirPantallaMenu(View vista){ //metodo para abrir ventana de registro
-        Intent pantallaMenu= new Intent(getApplicationContext(),MenuActivity.class); //creando in intnt para invocar a registro activicty
-        startActivity(pantallaMenu); //iniciamos la pantalla de Registro
+    public void abrirPantallaRegistro(View vista){ //metodo para abrir ventana de registro
+        Intent pantallaRegistro= new Intent(getApplicationContext(),RegistroActivity.class); //creando in intnt para invocar a registro activicty
+        startActivity(pantallaRegistro); //iniciamos la pantalla de Registro
 
     }
     public void iniciarSesion(View vista){
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             //cerrando el formulario de inicio de seseion
             finish();
             //creando un objeto para manejar la ventana/antivyty del menu
-            Intent ventanaMenu = new Intent(getApplicationContext(),MainActivity.class);
+            Intent ventanaMenu = new Intent(getApplicationContext(),MenuActivity.class);
             //abrir el activity del menu de opciones
             startActivity(ventanaMenu);
 
