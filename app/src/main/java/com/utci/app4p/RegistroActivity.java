@@ -42,7 +42,7 @@ public class RegistroActivity extends AppCompatActivity {
         //validacion que las contraseñas insertadas sean iguales
 
         if (!cedula.equals("") && !apellido.equals("") && !nombre.equals("") && !email.equals("")  && !password.equals("")&& !passwordConfirmada.equals("")){
-            if (validacionCedula(cedula)== false){
+            if (validacionCedula(cedula)!= false){
                 if(password.equals(passwordConfirmada)){
                     miBdd.agregarUsuarios(apellido, nombre, email, password, cedula);
                     Toast.makeText(getApplicationContext(),"Usuario Registrado Exitosamente",
