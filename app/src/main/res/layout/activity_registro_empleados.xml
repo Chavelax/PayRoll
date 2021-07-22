@@ -197,6 +197,18 @@
             android:inputType="number"
             android:textColorHint="#393636"
             android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borderbutton"
+            android:text="Ver Lista de empleados"
+            android:textColor="#090909"
+            app:backgroundTint="@color/cardview_dark_background"
+            app:backgroundTintMode="add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
