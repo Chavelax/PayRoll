@@ -2,6 +2,7 @@ package com.utci.app4p;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -59,6 +60,11 @@ public class RegistroEmpleadosActivity extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
         }
 
+    }
+
+    public void abrirEditarEmpleados(View vista){ //metodo para abrir ventana de registro
+        Intent pantallaRegistroE= new Intent(getApplicationContext(),EditarEmpleadoActivity.class); // invocar registro Empleados
+        startActivity(pantallaRegistroE); //iniciamos la pantalla de Registro
     }
 
     //metodo par aconsultar los clientes existenetes en sqlite y presentarlos en una lista

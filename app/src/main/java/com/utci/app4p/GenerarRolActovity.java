@@ -118,8 +118,6 @@ public class GenerarRolActovity extends AppCompatActivity {
         String stotal = String.valueOf(sueldofinal);
 
 
-
-
         if (!cedula.equals("") && !apellido.equals("") && !nombre.equals("") && !telefono.equals("") && !direccion.equals("") && !sueldo.equals("")&& !cargo.equals("")) {
             if (validacionCedula(cedula) != false) {
                 Bdd.actualizarEmpleado(cedula, apellido, nombre, telefono, direccion, sueldo, cargo, hextra,hsuple,stotal, id);//Procesando la actualizacion en la bdd
@@ -134,6 +132,11 @@ public class GenerarRolActovity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Complete todos los campos", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    public void abrirVerRolEmpleados(View vista){ //metodo para abrir ventana de registro
+        Intent pantallaRegistroE= new Intent(getApplicationContext(),VerRolActivity.class); // invocar registro Empleados
+        startActivity(pantallaRegistroE); //iniciamos la pantalla de Registro
     }
 
     private boolean validacionCedula(String document) {
