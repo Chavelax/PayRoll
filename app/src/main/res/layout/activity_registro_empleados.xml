@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo"
+        android:background="@drawable/fondo1"
         android:orientation="vertical"
         android:padding="20sp">
 
@@ -17,9 +17,10 @@
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/librebaskervillebold"
             android:gravity="center"
             android:text="Gestion de empleados "
-            android:textColor="#100F0F"
+            android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
         <TextView
@@ -32,9 +33,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="@font/librebaskervillebold"
             android:hint="Ingrese la cedula"
             android:inputType="number"
-            android:textColorHint="#393636" />
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView31"
@@ -46,9 +49,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="@font/librebaskervillebold"
             android:hint="Ingrese Apellido"
             android:inputType="textPersonName"
-            android:textColorHint="#393636" />
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView16"
@@ -60,9 +65,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="@font/librebaskervillebold"
             android:hint="Ingrese nombre"
             android:inputType="textPersonName"
-            android:textColorHint="#393636" />
+            android:textColorHint="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView15"
@@ -74,9 +80,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="@font/librebaskervillebold"
             android:hint="Ingrese numero de telefono"
             android:inputType="phone"
-            android:textColorHint="#393636" />
+            android:textColorHint="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView14"
@@ -88,9 +95,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="@font/librebaskervillebold"
             android:hint="Ingrese Direccion"
             android:inputType="textPersonName"
-            android:textColorHint="#393636" />
+            android:textColorHint="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView13"
@@ -102,9 +110,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="@font/librebaskervillebold"
             android:hint="Ingrese el sueldo"
             android:inputType="number"
-            android:textColorHint="#393636" />
+            android:textColorHint="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView19"
@@ -116,9 +125,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="@font/librebaskervillebold"
             android:hint="Ingrese cargo/puesto Trabajo"
             android:inputType="textPersonName"
-            android:textColorHint="#393636" />
+            android:textColorHint="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView34"
@@ -135,10 +145,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@drawable/borderbutton"
                 android:drawableLeft="@android:drawable/ic_menu_save"
                 android:onClick="guardarEmpleado"
                 android:text="Guardar"
-                app:backgroundTint="#2C44CD" />
+                android:textColor="#000000"
+                app:backgroundTint="@color/cardview_dark_background"
+                app:backgroundTintMode="add" />
 
             <Button
                 android:id="@+id/button4"
@@ -147,9 +160,12 @@
                 android:layout_marginStart="20sp"
                 android:layout_marginLeft="20sp"
                 android:layout_weight="1"
+                android:background="@drawable/borderbutton"
                 android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
                 android:text="Cancelar"
-                app:backgroundTint="#DD3333" />
+                android:textColor="#000000"
+                app:backgroundTint="@color/cardview_dark_background"
+                app:backgroundTintMode="add" />
         </LinearLayout>
 
         <EditText

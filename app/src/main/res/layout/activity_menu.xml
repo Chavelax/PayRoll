@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo"
+        android:background="@drawable/fondo1"
         android:orientation="vertical"
         android:padding="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,9 +22,10 @@
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="92dp"
+            android:fontFamily="@font/librebaskervillebold"
             android:gravity="center"
-            android:text="Gestión Payroll"
-            android:textColor="#1C1C68"
+            android:text="GESTION PAYROLL "
+            android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -40,38 +41,43 @@
 
             <Button
                 android:id="@+id/button6"
-                android:layout_width="163dp"
+                android:layout_width="184dp"
                 android:layout_height="115dp"
                 android:layout_gravity="center"
                 android:layout_margin="15sp"
                 android:layout_weight="1"
-                android:background="@drawable/txt_border_redondeado"
+                android:background="@drawable/borderbutton"
+                android:fontFamily="@font/librebaskervillebold"
                 android:foregroundGravity="center"
                 android:gravity="center"
+                android:includeFontPadding="false"
                 android:onClick="abrirRegistroEmpleado"
                 android:text="Registrar Empleados "
-                android:textSize="16sp"
-                app:backgroundTint="#5766BD"
-                app:backgroundTintMode="src_atop"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:backgroundTint="@color/cardview_dark_background"
+                app:backgroundTintMode="add"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
                 android:id="@+id/button7"
-                android:layout_width="wrap_content"
+                android:layout_width="166dp"
                 android:layout_height="116dp"
                 android:layout_gravity="center"
                 android:layout_margin="15sp"
                 android:layout_marginStart="20sp"
                 android:layout_marginLeft="20sp"
                 android:layout_weight="1"
-                android:background="@drawable/txt_border_redondeado"
+                android:background="@drawable/borderbutton"
+                android:fontFamily="@font/librebaskervillebold"
                 android:foregroundGravity="center"
                 android:gravity="center"
                 android:onClick="abrirEditarEmpleado"
                 android:text="Ver empleados "
-                android:textSize="16sp"
-                app:backgroundTint="#5766BD"
-                app:backgroundTintMode="src_atop" />
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:backgroundTint="@color/cardview_dark_background"
+                app:backgroundTintMode="add" />
         </LinearLayout>
 
         <TextView
@@ -90,11 +96,13 @@
                 android:layout_height="111dp"
                 android:layout_margin="15sp"
                 android:layout_weight="1"
-                android:background="@drawable/txt_border_redondeado"
+                android:background="@drawable/borderbutton"
+                android:fontFamily="@font/librebaskervillebold"
                 android:onClick="abrirRolEmpleado"
                 android:text="Generar Rol"
-                app:backgroundTint="#5766BD"
-                app:backgroundTintMode="src_over"
+                android:textColor="#000000"
+                app:backgroundTint="@color/cardview_dark_background"
+                app:backgroundTintMode="add"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -104,10 +112,13 @@
                 android:layout_height="108dp"
                 android:layout_margin="15sp"
                 android:layout_weight="1"
-                android:background="@drawable/txt_border_redondeado"
+                android:background="@drawable/borderbutton"
+                android:fontFamily="@font/librebaskervillebold"
+                android:onClick="abrirVerRolEmpleado"
                 android:text="Ver Rol"
-                app:backgroundTint="#5766BD"
-                app:backgroundTintMode="src_in"
+                android:textColor="#000000"
+                app:backgroundTint="@color/cardview_dark_background"
+                app:backgroundTintMode="add"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
@@ -121,12 +132,14 @@
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/txt_border_redondeado"
+            android:background="@drawable/borderbutton"
+            android:fontFamily="@font/librebaskervillebold"
+            android:hapticFeedbackEnabled="false"
             android:onClick="cerrarPantallaMenu"
             android:text="Cerrar Sesión"
-            android:textColor="#571717"
+            android:textColor="#000000"
             android:textSize="16sp"
-            app:backgroundTint="@color/material_on_primary_disabled"
-            app:backgroundTintMode="multiply" />
+            app:backgroundTint="@color/cardview_dark_background"
+            app:backgroundTintMode="add" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

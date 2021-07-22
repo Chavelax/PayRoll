@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo"
+        android:background="@drawable/fondo1"
         android:orientation="vertical"
         android:padding="20sp"
         tools:ignore="MissingConstraints"
@@ -36,6 +36,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:fontFamily="@font/librebaskervillebold"
             android:text="INICIAR SESION"
             android:textColor="#FFFFFF"
             android:textSize="34sp" />
@@ -49,7 +50,9 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="EMAIL" />
+            android:fontFamily="@font/librebaskervillebold"
+            android:text="EMAIL"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView7"
@@ -61,7 +64,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView8"
@@ -72,28 +76,46 @@
             android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password" />
+            android:fontFamily="@font/librebaskervillebold"
+            android:text="Password"
+            android:textColor="#FFFFFF" />
 
         <EditText
             android:id="@+id/txtPasswordLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/borderbutton"
+            android:fontFamily="@font/librebaskervillebold"
             android:onClick="iniciarSesion"
-            android:text="INICIAR SESION" />
+            android:text="INICIAR SESION"
+            android:textColor="#000000"
+            app:backgroundTint="@color/cardview_dark_background"
+            app:backgroundTintMode="add" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/borderbutton"
+            android:fontFamily="@font/librebaskervillebold"
             android:onClick="abrirPantallaRegistro"
-            android:text="REGISTRARSE" />
+            android:text="REGISTRARSE"
+            android:textColor="#000000"
+            app:backgroundTint="@color/cardview_dark_background"
+            app:backgroundTintMode="add" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

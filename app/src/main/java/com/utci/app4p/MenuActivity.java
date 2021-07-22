@@ -27,6 +27,10 @@ public class MenuActivity extends AppCompatActivity {
         Intent pantallaRegistroE= new Intent(getApplicationContext(),RolActivity.class); // invocar registro Empleados
         startActivity(pantallaRegistroE); //iniciamos la pantalla de Registro
     }
+    public void abrirVerRolEmpleado(View vista){ //metodo para abrir ventana de registro
+        Intent pantallaRegistroE= new Intent(getApplicationContext(),VerRolActivity.class); // invocar registro Empleados
+        startActivity(pantallaRegistroE); //iniciamos la pantalla de Registro
+    }
 
     public void cerrarPantallaMenu(View vista) {
         finish();

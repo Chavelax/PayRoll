@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GenerarRolActovity">
+    tools:context=".ImprimirRolActivity">
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
@@ -77,44 +77,31 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF" />
 
-        <TextView
-            android:id="@+id/textView35"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
         <EditText
             android:id="@+id/txtNumeroE1"
             android:layout_width="286dp"
-            android:layout_height="wrap_content"
+            android:layout_height="11dp"
             android:layout_gravity="center"
             android:ems="10"
             android:fontFamily="@font/librebaskervillebold"
             android:hint="Ingrese su Telefono"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
-
-        <TextView
-            android:id="@+id/textView36"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:textColorHint="#FFFFFF"
+            android:visibility="invisible" />
 
         <EditText
             android:id="@+id/txtDireccionE1"
             android:layout_width="289dp"
-            android:layout_height="wrap_content"
+            android:layout_height="12dp"
             android:layout_gravity="center"
             android:ems="10"
             android:fontFamily="@font/librebaskervillebold"
             android:hint="Ingrese su direccion"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
-
-        <TextView
-            android:id="@+id/textView38"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:textColorHint="#FFFFFF"
+            android:visibility="invisible" />
 
         <EditText
             android:id="@+id/txtSueldoE1"
