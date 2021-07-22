@@ -103,7 +103,21 @@ public class GenerarRolActovity extends AppCompatActivity {
         String cargo = txtCargoE1.getText().toString();
         String hextra = txthextraE1.getText().toString();
         String hsuple = txthsupleE1.getText().toString();
-        String stotal= txtstotalE1.getText().toString();
+
+        Double sueldocv=Double.parseDouble(sueldo);
+        Double preciohoratrabajo=((sueldocv/30)/8);
+
+        Double hextracv=Double.parseDouble(hextra);
+        Double preciohoraextra= ((preciohoratrabajo*1.5)*hextracv);
+
+        Double  hsuplecv=Double.parseDouble(hsuple);
+        Double preciohorasuple=((preciohoratrabajo*2)*hsuplecv);
+
+        Double sueldofinal=(preciohoratrabajo+preciohoraextra+preciohorasuple+sueldocv);
+
+        String stotal = String.valueOf(sueldofinal);
+
+
 
 
         if (!cedula.equals("") && !apellido.equals("") && !nombre.equals("") && !telefono.equals("") && !direccion.equals("") && !sueldo.equals("")&& !cargo.equals("")) {

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ImprimirRolActivity">
+
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
@@ -15,21 +16,47 @@
         tools:layout_editor_absoluteY="1dp">
 
         <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
             android:id="@+id/textView68"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/librebaskervillebold"
             android:gravity="center"
-            android:text="GENERAR ROL"
+            android:text="ROL DE PAGOS"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txtEmpleadoEditar"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
+            android:layout_height="wrap_content"
             android:cursorVisible="false"
             android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:srcCompat="@drawable/paycalendar" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/librebaskervillebold"
+            android:gravity="center"
+            android:text="Ci:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
         <EditText
             android:id="@+id/txtCedulaE1"
@@ -41,12 +68,18 @@
             android:hint="Ingrese su cedula"
             android:inputType="number"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/textView33"
+            android:id="@+id/textView45"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/librebaskervillebold"
+            android:gravity="center"
+            android:text="Nombres y Apellidos:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
         <EditText
             android:id="@+id/txtApellidoE1"
@@ -58,7 +91,8 @@
             android:hint="Ingrese Apellido"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textView34"
@@ -75,7 +109,8 @@
             android:hint="Ingrese Nombres"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:textSize="12sp" />
 
         <EditText
             android:id="@+id/txtNumeroE1"
@@ -103,6 +138,16 @@
             android:textColorHint="#FFFFFF"
             android:visibility="invisible" />
 
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/librebaskervillebold"
+            android:gravity="center"
+            android:text="Sueldo:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
         <EditText
             android:id="@+id/txtSueldoE1"
             android:layout_width="289dp"
@@ -113,12 +158,18 @@
             android:hint="Ingrese el sueldo"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView47"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/librebaskervillebold"
+            android:gravity="center"
+            android:text="Cargo:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
         <EditText
             android:id="@+id/txtCargoE1"
@@ -130,12 +181,18 @@
             android:hint="Ingrese el cargo"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/textView37"
+            android:id="@+id/textView48"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/librebaskervillebold"
+            android:gravity="center"
+            android:text="Horas extra trabajadas:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
         <EditText
             android:id="@+id/txthextraE1"
@@ -147,12 +204,18 @@
             android:hint="Ingrese horas extra"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/textView300"
+            android:id="@+id/textView49"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/librebaskervillebold"
+            android:gravity="center"
+            android:text="Horas suplementarias trabajadas:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
         <EditText
             android:id="@+id/txthsupleE1"
@@ -164,38 +227,42 @@
             android:hint="Ingrese horas suplementarias"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textView370"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="250dp"
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/borderbutton"
             android:fontFamily="@font/librebaskervillebold"
-            android:onClick="actualizar"
-            android:text="General Rol"
-            android:textColor="#000000"
-            app:backgroundTint="@color/cardview_dark_background"
-            app:backgroundTintMode="add" />
+            android:gravity="center"
+            android:text="SUELDO TOTAL:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
         <EditText
             android:id="@+id/txtstotalE1"
-            android:layout_width="match_parent"
+            android:layout_width="289dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
             android:fontFamily="@font/librebaskervillebold"
-            android:hint="Ingrese horas suplementarias"
+            android:hint="Sueldo Total"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
-            android:visibility="invisible" />
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

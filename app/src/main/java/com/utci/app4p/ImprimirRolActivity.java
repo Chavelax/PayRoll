@@ -11,11 +11,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Date;
+
 public class ImprimirRolActivity extends AppCompatActivity {
-    String id, cedula, apellido, nombre, telefono, direccion, sueldo, cargo, hextra, hsuple, stotal;
-    EditText txtCedulaE1,txtApellidoE1,txtNombreE1, txtNumeroE1 ,txtDireccionE1, txtSueldoE1 ,txtCargoE1,txthextraE1,txthsupleE1,txtstotalE1;
+    String id, cedula, apellido, nombre, telefono, direccion, sueldo, cargo, hextra, hsuple, stotal,sueldofinalcv;
+    EditText txtCedulaE1,txtApellidoE1,txtNombreE1, txtNumeroE1 ,txtDireccionE1, txtSueldoE1 ,txtCargoE1,txthextraE1,txthsupleE1,txtstotalE1, textView41;
     TextView txtEmpleadoEditar;
     BaseDatos Bdd;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,7 @@ public class ImprimirRolActivity extends AppCompatActivity {
         txtCargoE1=  findViewById(R.id.txtCargoE1);
         txthextraE1= findViewById(R.id.txthextraE1);
         txthsupleE1= findViewById(R.id.txthsupleE1);
-        txtstotalE1= findViewById(R.id.txtstotalE1);
+
         Bundle parametrosExtra = getIntent().getExtras();//capturando los parametros que se han pasado a esta actividad
         if (parametrosExtra != null) {
             try {
@@ -94,6 +97,7 @@ public class ImprimirRolActivity extends AppCompatActivity {
 
     public void actualizar(View vista) {
 
+
         String cedula = txtCedulaE1.getText().toString();
         String apellido = txtApellidoE1.getText().toString();
         String nombre = txtNombreE1.getText().toString();
@@ -107,7 +111,8 @@ public class ImprimirRolActivity extends AppCompatActivity {
 
 
         if (!cedula.equals("") && !apellido.equals("") && !nombre.equals("") && !telefono.equals("") && !direccion.equals("") && !sueldo.equals("")&& !cargo.equals("")) {
-            calculoSueldoE();
+
+
             if (validacionCedula(cedula) != false) {
                 Bdd.actualizarEmpleado(cedula, apellido, nombre, telefono, direccion, sueldo, cargo, hextra,hsuple,stotal, id);//Procesando la actualizacion en la bdd
 
@@ -123,20 +128,6 @@ public class ImprimirRolActivity extends AppCompatActivity {
 
     }
 
-    public void calculoSueldoE(){
-        double sueldocv=Double.parseDouble(sueldo);
-        double preciohoratrabajo=((sueldocv/30)/8);
-
-        double hextracv=Double.parseDouble(hextra);
-        double preciohoraextra= ((preciohoratrabajo*1.5)*hextracv);
-
-        double hsuplecv=Double.parseDouble(hsuple);
-        double preciohorasuple=((preciohoratrabajo*2)*hsuplecv);
-
-        double sueldofinal=(preciohoratrabajo+preciohoraextra+preciohorasuple);
-        String sueldofinalcv=String.valueOf(sueldofinal);
-        stotal=sueldofinalcv;
-    }
 
     private boolean validacionCedula(String document) {
         byte sum = 0;
@@ -168,5 +159,9 @@ public class ImprimirRolActivity extends AppCompatActivity {
         }
         return false;
     }
+
+
+
+
 
 }
