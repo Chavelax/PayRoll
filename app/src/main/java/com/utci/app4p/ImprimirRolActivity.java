@@ -107,6 +107,7 @@ public class ImprimirRolActivity extends AppCompatActivity {
 
 
         if (!cedula.equals("") && !apellido.equals("") && !nombre.equals("") && !telefono.equals("") && !direccion.equals("") && !sueldo.equals("")&& !cargo.equals("")) {
+            calculoSueldoE();
             if (validacionCedula(cedula) != false) {
                 Bdd.actualizarEmpleado(cedula, apellido, nombre, telefono, direccion, sueldo, cargo, hextra,hsuple,stotal, id);//Procesando la actualizacion en la bdd
 
@@ -120,6 +121,21 @@ public class ImprimirRolActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Complete todos los campos", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    public void calculoSueldoE(){
+        double sueldocv=Double.parseDouble(sueldo);
+        double preciohoratrabajo=((sueldocv/30)/8);
+
+        double hextracv=Double.parseDouble(hextra);
+        double preciohoraextra= ((preciohoratrabajo*1.5)*hextracv);
+
+        double hsuplecv=Double.parseDouble(hsuple);
+        double preciohorasuple=((preciohoratrabajo*2)*hsuplecv);
+
+        double sueldofinal=(preciohoratrabajo+preciohoraextra+preciohorasuple);
+        String sueldofinalcv=String.valueOf(sueldofinal);
+        stotal=sueldofinalcv;
     }
 
     private boolean validacionCedula(String document) {
