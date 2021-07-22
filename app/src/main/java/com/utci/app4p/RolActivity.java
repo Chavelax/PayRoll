@@ -39,6 +39,9 @@ public class RolActivity extends AppCompatActivity {
                 String direccionCliente=clienteObtenidos.getString( 5);
                 String sueldo=clienteObtenidos.getString( 6);
                 String cargo=clienteObtenidos.getString( 7);
+                String hextra=clienteObtenidos.getString( 8);
+                String hsuple=clienteObtenidos.getString( 9);
+                String stotal=clienteObtenidos.getString( 10);
 
 
                 //Toast.makeText(getApplicationContext(),idCliente+"-"+cedulaCliente+"-"+apellidoCliente+"-"+
@@ -52,6 +55,9 @@ public class RolActivity extends AppCompatActivity {
                 ventanaEditarCliente.putExtra("direccion",direccionCliente);
                 ventanaEditarCliente.putExtra("sueldo",sueldo);
                 ventanaEditarCliente.putExtra("cargo",cargo);
+                ventanaEditarCliente.putExtra("hextra",hextra);
+                ventanaEditarCliente.putExtra("hsuple",hsuple);
+                ventanaEditarCliente.putExtra("stotal",stotal);
                 startActivity(ventanaEditarCliente);
                 finish();
             }
