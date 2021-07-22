@@ -34,7 +34,7 @@ public class ImprimirRolActivity extends AppCompatActivity {
         txtCargoE1=  findViewById(R.id.txtCargoE1);
         txthextraE1= findViewById(R.id.txthextraE1);
         txthsupleE1= findViewById(R.id.txthsupleE1);
-
+        txtstotalE1= findViewById(R.id.txtstotalE1);
         Bundle parametrosExtra = getIntent().getExtras();//capturando los parametros que se han pasado a esta actividad
         if (parametrosExtra != null) {
             try {
@@ -161,7 +161,12 @@ public class ImprimirRolActivity extends AppCompatActivity {
     }
 
 
+        public static void main(String[] args) {
 
+            Date fechaHoraActuales = new Date();
+
+            System.out.println("Fecha y hora actual: " + fechaHoraActuales);
+        }
 
 
 }
