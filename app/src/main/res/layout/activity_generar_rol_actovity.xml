@@ -151,7 +151,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
-            android:id="@+id/txtHorasE"
+            android:id="@+id/txthextraE1"
             android:layout_width="289dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -168,7 +168,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
-            android:id="@+id/txtHorasS"
+            android:id="@+id/txthsupleE1"
             android:layout_width="289dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -191,11 +191,24 @@
             android:layout_gravity="center"
             android:background="@drawable/borderbutton"
             android:fontFamily="@font/librebaskervillebold"
-            android:onClick="volver"
+            android:onClick="actualizar"
             android:text="General Rol"
             android:textColor="#000000"
             app:backgroundTint="@color/cardview_dark_background"
             app:backgroundTintMode="add" />
+
+        <EditText
+            android:id="@+id/txtstotalE1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="@font/librebaskervillebold"
+            android:hint="Ingrese horas suplementarias"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:visibility="invisible" />
 
     </LinearLayout>
 

@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class RegistroEmpleadosActivity extends AppCompatActivity {
-    EditText txtCedulaE,txtApellidoE,txtNombreE, txtNumeroE ,txtDireccionE, txtSueldoE ,txtCargoE;
+    EditText txtCedulaE,txtApellidoE,txtNombreE, txtNumeroE ,txtDireccionE, txtSueldoE ,txtCargoE, txthextraE,txthsupleE,txtstotalE;
     BaseDatos Bdd;
 
     @Override
@@ -22,6 +22,9 @@ public class RegistroEmpleadosActivity extends AppCompatActivity {
         txtDireccionE=(EditText) findViewById(R.id.txtDireccionE);
         txtSueldoE=(EditText) findViewById(R.id.txtSueldoE);
         txtCargoE=(EditText)  findViewById(R.id.txtCargoE);
+        txthextraE=(EditText)  findViewById(R.id.txthextraE);
+        txthsupleE=(EditText)  findViewById(R.id.txthsupleE);
+        txtstotalE=(EditText)  findViewById(R.id.txtstotalE);
         Bdd=new BaseDatos(getApplicationContext());
     }
     public void guardarEmpleado(View vista){
@@ -33,6 +36,9 @@ public class RegistroEmpleadosActivity extends AppCompatActivity {
         String direccion= txtDireccionE.getText().toString();
         String sueldo=txtSueldoE.getText().toString();
         String cargo= txtCargoE.getText().toString();
+        String hextra= txthextraE.getText().toString();
+        String hsuple= txthsupleE.getText().toString();
+        String stotal= txtstotalE.getText().toString();
 
 
 
@@ -40,7 +46,7 @@ public class RegistroEmpleadosActivity extends AppCompatActivity {
         if (!cedula.equals("") && !apellido.equals("") && !nombre.equals("") && !telefono.equals("")  && !direccion.equals("") && !sueldo.equals("") && !cargo.equals("")){
 
             if (validacionCedula(cedula)!= false){
-                Bdd.AgregarEmpleado(cedula,apellido,nombre,telefono,direccion,sueldo,cargo);
+                Bdd.AgregarEmpleado(cedula,apellido,nombre,telefono,direccion,sueldo,cargo, hextra,hsuple,stotal);
 
                 Toast.makeText(getApplicationContext(),"Empleado Registrdo Exitosamente",
                         Toast.LENGTH_LONG).show();

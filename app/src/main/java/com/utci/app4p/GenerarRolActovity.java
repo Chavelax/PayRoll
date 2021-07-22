@@ -12,8 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class GenerarRolActovity extends AppCompatActivity {
-    String id, cedula, apellido, nombre, telefono, direccion, sueldo, cargo;
-    EditText txtCedulaE1,txtApellidoE1,txtNombreE1, txtNumeroE1 ,txtDireccionE1, txtSueldoE1 ,txtCargoE1;
+    String id, cedula, apellido, nombre, telefono, direccion, sueldo, cargo, hextra, hsuple, stotal;
+    EditText txtCedulaE1,txtApellidoE1,txtNombreE1, txtNumeroE1 ,txtDireccionE1, txtSueldoE1 ,txtCargoE1,txthextraE1,txthsupleE1,txtstotalE1;
     TextView txtEmpleadoEditar;
     BaseDatos Bdd;
 
@@ -29,6 +29,9 @@ public class GenerarRolActovity extends AppCompatActivity {
         txtDireccionE1= findViewById(R.id.txtDireccionE1);
         txtSueldoE1= findViewById(R.id.txtSueldoE1);
         txtCargoE1=  findViewById(R.id.txtCargoE1);
+        txthextraE1= findViewById(R.id.txthextraE1);
+        txthsupleE1= findViewById(R.id.txthsupleE1);
+        txtstotalE1= findViewById(R.id.txtstotalE1);
         Bundle parametrosExtra = getIntent().getExtras();//capturando los parametros que se han pasado a esta actividad
         if (parametrosExtra != null) {
             try {
@@ -41,6 +44,9 @@ public class GenerarRolActovity extends AppCompatActivity {
                 direccion = parametrosExtra.getString("direccion");
                 sueldo = parametrosExtra.getString("sueldo");
                 cargo = parametrosExtra.getString("cargo");
+                hextra = parametrosExtra.getString("hextra");
+                hsuple = parametrosExtra.getString("hsuple");
+                stotal = parametrosExtra.getString("stotal");
             } catch (Exception ex) {
                 Toast.makeText(getApplicationContext(), "Error al procesar la solicitud", Toast.LENGTH_SHORT).show();
             }
@@ -53,6 +59,9 @@ public class GenerarRolActovity extends AppCompatActivity {
         txtDireccionE1.setText(direccion);
         txtSueldoE1.setText(sueldo);
         txtCargoE1.setText(cargo);
+        txthextraE1.setText(hextra);
+        txthsupleE1.setText(hsuple);
+        txtstotalE1.setText(stotal);
         Bdd = new BaseDatos(getApplicationContext());
     }
     public void volver(View vista) {
@@ -92,10 +101,14 @@ public class GenerarRolActovity extends AppCompatActivity {
         String direccion = txtDireccionE1.getText().toString();
         String sueldo = txtSueldoE1.getText().toString();
         String cargo = txtCargoE1.getText().toString();
+        String hextra = txthextraE1.getText().toString();
+        String hsuple = txthsupleE1.getText().toString();
+        String stotal= txtstotalE1.getText().toString();
+
 
         if (!cedula.equals("") && !apellido.equals("") && !nombre.equals("") && !telefono.equals("") && !direccion.equals("") && !sueldo.equals("")&& !cargo.equals("")) {
             if (validacionCedula(cedula) != false) {
-                Bdd.actualizarEmpleado(cedula, apellido, nombre, telefono, direccion, sueldo, cargo, id);//Procesando la actualizacion en la bdd
+                Bdd.actualizarEmpleado(cedula, apellido, nombre, telefono, direccion, sueldo, cargo, hextra,hsuple,stotal, id);//Procesando la actualizacion en la bdd
 
                 Toast.makeText(getApplicationContext(), "Se Actualizaron los datos Correctamente", Toast.LENGTH_SHORT).show();
             } else {

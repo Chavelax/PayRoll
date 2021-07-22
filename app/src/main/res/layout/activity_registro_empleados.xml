@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegistroEmpleadosActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondobvnd"
+        android:background="@drawable/fondo"
         android:orientation="vertical"
         android:padding="20sp">
 
@@ -150,6 +151,36 @@
                 android:text="Cancelar"
                 app:backgroundTint="#DD3333" />
         </LinearLayout>
+
+        <EditText
+            android:id="@+id/txthextraE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese la cedula"
+            android:inputType="number"
+            android:textColorHint="#393636"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/txthsupleE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese la cedula"
+            android:inputType="number"
+            android:textColorHint="#393636"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/txtstotalE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese la cedula"
+            android:inputType="number"
+            android:textColorHint="#393636"
+            android:visibility="invisible" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

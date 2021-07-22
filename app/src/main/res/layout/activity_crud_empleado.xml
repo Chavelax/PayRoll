@@ -28,8 +28,47 @@
         <TextView
             android:id="@+id/txtEmpleadoEditar"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
+            android:layout_height="8dp"
             android:cursorVisible="false"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/txthextraE2"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="@font/librebaskervillebold"
+            android:hint="Ingrese el sueldo"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/txthsupleE2"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="@font/librebaskervillebold"
+            android:hint="Ingrese el sueldo"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/txtstotalE2"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="@font/librebaskervillebold"
+            android:hint="Ingrese el sueldo"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
             android:visibility="invisible" />
 
         <EditText
